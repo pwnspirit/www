@@ -1,0 +1,43 @@
+<script>
+    let links = [
+        ["https://discord.com/users/936853051984199750", "discord", "--green"],
+        ["https://github.com/pwnspirit", "github", "--teal"],
+        ["https://www.linkedin.com/in/pwnspirit", "linkedin", "--sky"],
+        ];
+</script>
+
+<style>
+
+    #Footer {
+        /* margin-top: auto; */
+
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 0;
+        background-color: var(--crust);
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .footer-link {
+        text-decoration: none;
+    }
+
+</style>
+
+
+<footer id="Footer">
+    <div class="footer-links">
+        {#each links as [link, title, color]}
+            <a href={link} class="footer-link" style="color: var({color})">{title}</a>
+        {/each}
+    </div>
+</footer>

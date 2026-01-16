@@ -1,0 +1,28 @@
+{
+	"name": "pwn",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev --host 0.0.0.0 --port 5173",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.1.0",
+		"@sveltejs/adapter-cloudflare": "^3.0.1",
+		"@sveltejs/adapter-static": "^3.0.10",
+		"@sveltejs/kit": "^2.0.6",
+		"mdsvex": "^0.11.0",
+		"svelte": "^4.2.8",
+		"vite": "^5.0.11"
+	},
+	"type": "module",
+	"dependencies": {
+		"@catppuccin/palette": "^1.0.3",
+		"@sveltejs/vite-plugin-svelte": "^3.0.1",
+		"rehype-slug": "^6.0.0",
+		"svelte-preprocess": "^5.1.4",
+		"undici": "^5.26.2",
+		"wrangler": "^3.22.3"
+	}
+}
